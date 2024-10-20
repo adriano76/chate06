@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centraliza verticalmente */
+    min-height: 100vh; /* Garante que o body ocupe toda a altura da tela */
+    margin: 0; /* Remove margens padrão */
+}
+
+#chat-container {
+    width: 500px; /* Aumenta a largura do contêiner */
+    height: 600px; /* Aumenta a altura do contêiner */
+    border: 1px solid #ccc;
+    overflow-y: auto;
+    background-color: #fff;
+    padding: 20px; /* Aumenta o padding para um espaçamento melhor */
+    border-radius: 8px; /* Bordas mais arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+}
+
+#input-container {
+    margin-top: 15px; /* Aumenta a margem superior */
+    display: flex;
+    width: 500px; /* Alinha a largura do contêiner de entrada com o contêiner de chat */
+}
+
+#user-input {
+    flex: 1;
+    padding: 15px; /* Aumenta o padding para o campo de entrada */
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Aumenta o tamanho da fonte */
+}
+
+#send-button {
+    padding: 15px; /* Aumenta o padding do botão */
+    background-color: #007BFF; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove bordas do botão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Adiciona o cursor de pointer */
+    font-size: 16px; /* Aumenta o tamanho da fonte */
+    transition: background-color 0.3s; /* Transição suave para mudança de cor */
+}
+
+#send-button:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+
+.message {
+    margin: 10px 0; /* Aumenta a margem entre mensagens */
+    padding: 10px; /* Adiciona padding nas mensagens */
+    border-radius: 5px; /* Bordas arredondadas nas mensagens */
+}
+
+.user-message {
+    text-align: right;
+    background-color: #e0f7fa; /* Cor de fundo para mensagens do usuário */
+}
+
+.bot-message {
+    text-align: left;
+    background-color: #e8f5e9; /* Cor de fundo para mensagens do bot */
+}
+
+.chatgpt-message {
+    text-align: left;
+    background-color: #fff3e0; /* Cor de fundo para mensagens do ChatGPT */
+}
